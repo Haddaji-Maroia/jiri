@@ -10,12 +10,12 @@
     </div>
 
     <div class="mb-40">
-        <x-add-button>Ajouter un projet</x-add-button>
+        <x-ui.add-button>Ajouter un projet</x-ui.add-button>
     </div>
 
     <div class="grid grid-cols-2 gap-8">
-        <x-add-button>Ajouter un étudiant</x-add-button>
-        <x-add-button>Ajouter un membre</x-add-button>
+        <x-ui.add-button>Ajouter un étudiant</x-ui.add-button>
+        <x-ui.add-button>Ajouter un membre</x-ui.add-button>
     </div>
 
 </x-layouts.admin>
