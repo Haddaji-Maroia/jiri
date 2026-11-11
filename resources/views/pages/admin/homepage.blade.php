@@ -12,22 +12,22 @@
         </button>
     </div>
 
-    <x-jiri-section title="En cours">
-        <x-jiri-card title="Épreuve 16 Juin 2026" students="12" jury="8" status="En cours" />
-        <x-jiri-card title="Épreuve 16 Juin 2026" students="12" jury="8" status="En cours" />
-    </x-jiri-section>
+    <x-jiri.section title="En cours">
+        <x-jiri.card title="Épreuve 16 Juin 2026" students="12" jury="8" status="En cours" />
+        <x-jiri.card title="Épreuve 16 Juin 2026" students="12" jury="8" status="En cours" />
+    </x-jiri.section>
 
-    <x-jiri-section title="À venir">
-        <x-jiri-card title="Épreuve 16 Juin 2026 - 09:00" students="12" jury="8" status="À venir" />
-    </x-jiri-section>
+    <x-jiri.section title="À venir">
+        <x-jiri.card title="Épreuve 16 Juin 2026 - 09:00" students="12" jury="8" status="À venir" />
+    </x-jiri.section>
 
-    <x-jiri-section title="Terminés">
-        <x-jiri-card title="Épreuve 16 Juin 2026 - 09:00" students="12" jury="8" status="Terminé" />
-    </x-jiri-section>
+    <x-jiri.section title="Terminés">
+        <x-jiri.card title="Épreuve 16 Juin 2026 - 09:00" students="12" jury="8" status="Terminé" />
+    </x-jiri.section>
 
-    <x-jiri-section title="Archivés">
-        <x-jiri-card title="Épreuve 16 Juin 2026 - 09:00" students="12" jury="8" status="Archivé" />
-    </x-jiri-section>
+    <x-jiri.section title="Archivés">
+        <x-jiri.card title="Épreuve 16 Juin 2026 - 09:00" students="12" jury="8" status="Archivé" />
+    </x-jiri.section>
 
     <x-modals.add-jiri/>
 

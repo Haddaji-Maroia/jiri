@@ -7,7 +7,7 @@
             Épreuve 16 Juin 2026
         </h1>
 
-        <x-add-button>Ajouter un projet</x-add-button>
+        <x-ui.add-button>Ajouter un projet</x-ui.add-button>
 
     </div>
 
@@ -105,7 +105,7 @@
 
             </div>
 
-            <x-add-button>Ajouter un étudiant</x-add-button>
+            <x-ui.add-button>Ajouter un étudiant</x-ui.add-button>
 
 
         </div>
@@ -163,7 +163,7 @@
 
             </div>
 
-            <x-add-button>Ajouter un membre</x-add-button>
+            <x-ui.add-button>Ajouter un membre</x-ui.add-button>
 
         </div>
 
