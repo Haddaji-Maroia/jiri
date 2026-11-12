@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 
-#[Fillable(['name', 'description'])]
+#[Fillable(['name', 'description', 'repo_url'])]
 class Project extends Model
 {
     use HasUuids, HasFactory;

@@ -4,17 +4,23 @@ namespace Database\Factories;
 
 use App\Models\Project;
 use Illuminate\Database\Eloquent\Factories\Factory;
-use Illuminate\Support\Carbon;
 
+/**
+ * @extends Factory<Project>
+ */
 class ProjectFactory extends Factory
 {
-    protected $model = Project::class;
-
+    /**
+     * Define the model's default state.
+     *
+     * @return array<string, mixed>
+     */
     public function definition(): array
     {
         return [
-            'created_at' => Carbon::now(),
-            'updated_at' => Carbon::now(),
+            'name' => fake()->words(2, true),
+            'description' => fake()->sentence(),
+            'repo_url' => fake()->url(),
         ];
     }
 }
