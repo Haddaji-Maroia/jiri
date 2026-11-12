@@ -2,24 +2,31 @@
 
 namespace Database\Factories;
 
-use App\Models\Contact;
+use App\Models\Jiri;
 use Illuminate\Database\Eloquent\Factories\Factory;
-use Illuminate\Support\Carbon;
 
+/**
+ * @extends Factory<Jiri>
+ */
 class JiriFactory extends Factory
 {
-    protected $model = Contact::class;
-
+    /**
+     * Define the model's default state.
+     *
+     * @return array<string, mixed>
+     */
     public function definition(): array
     {
         return [
-            'name' => $this->faker->name(),
-            'date' => Carbon::now(),
-            'begins_at' => Carbon::now(),
-            'ends_at' => Carbon::now(),
-            'status' => $this->faker->word(),
-            'created_at' => Carbon::now(),
-            'updated_at' => Carbon::now(),
+            'name' => fake()->words(3, true),
+            'date' => fake()->dateTimeBetween('now', '+1 year')->format('Y-m-d'),
+            'begins_at' => '08:30',
+            'ends_at' => '17:30',
+            'status' => fake()->randomElement([
+                'upcoming',
+                'ongoing',
+                'completed',
+            ]),
         ];
     }
 }
