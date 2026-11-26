@@ -4,7 +4,7 @@
     $active = $status === 'En cours';
 @endphp
 
-<a href="{{ route('jiri') }}">
+<a href="{{ route('jiri.index') }}">
     <div @class([
     'bg-white rounded-xl px-7 py-5 flex justify-between items-start cursor-pointer ',
     'border border-blue-800' => $active,
