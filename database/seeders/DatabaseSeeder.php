@@ -18,15 +18,14 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
-        // User::factory(10)->create();
+        User::factory()->create(['name' => 'Maroia', 'email' => 'maroia@test.com']);
+        User::factory()->create(['name' => 'Alessia', 'email' => 'alessia@test.com']);
+        User::factory()->create(['name' => 'Sara', 'email' => 'sara@test.com']);
 
-//        User::factory()->create([
-//            'name' => 'Test User',
-//            'email' => 'test@example.com',
-//        ]);
-
-        Contact::factory(30)->create();
-        Project::factory(10)->create();
-        Jiri::factory(5)->create();
+        $this->call([
+            ContactSeeder::class,
+            ProjectSeeder::class,
+            JiriSeeder::class,
+        ]);
     }
 }
