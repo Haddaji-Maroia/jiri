@@ -53,5 +53,10 @@ class User extends Authenticatable
             ->get();
     }
 
+    public function projects(): HasMany
+    {
+        return $this->hasMany(Project::class);
+    }
+
 
 }

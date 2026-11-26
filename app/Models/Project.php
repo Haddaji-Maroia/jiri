@@ -16,7 +16,8 @@ class Project extends Model
 
     public function jiris(): BelongsToMany
     {
-        return $this->belongsToMany(Contact::class, 'jiri_project');
+        return $this->belongsToMany(Jiri::class, 'assignments')
+            ->withPivot('percentage');
     }
 
     public function user(): BelongsTo
