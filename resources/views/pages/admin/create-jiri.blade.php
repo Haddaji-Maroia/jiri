@@ -2,7 +2,7 @@
 
     <div class="flex justify-between items-start mb-16">
         <div>
-            <h1 class="text-2xl mb-3">Épreuve 16 Juin 2026</h1>
+            <h1 class="text-2xl mb-3">Design web - 16 Juin 2026 - 9h00</h1>
             <p class="text-gray-500">9h00-17h00</p>
         </div>
 
