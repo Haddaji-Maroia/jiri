@@ -14,6 +14,7 @@ return new class extends Migration {
             $table->time('begins_at');
             $table->time('ends_at');
             $table->string('status');
+            $table->foreignUuid('user_id')->constrained('users','id');
             $table->timestamps();
         });
     }

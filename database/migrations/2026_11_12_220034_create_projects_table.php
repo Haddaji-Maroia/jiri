@@ -12,6 +12,7 @@ return new class extends Migration {
             $table->string('name');
             $table->string('description');
             $table->string('repo_url')->nullable();
+            $table->foreignUuid('user_id')->constrained('users','id');
             $table->timestamps();
         });
     }
